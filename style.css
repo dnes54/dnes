@@ -47,6 +47,17 @@ main {
   margin-bottom: 0.8rem;
 }
 
+a {
+  text-decoration: none;
+  color: #b9ff66;
+  font-weight: normal;
+  font-style: normal;
+}
+
+a:hover{
+  color: #FF6A34;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -58,6 +69,10 @@ footer {
   display: flex;
   gap: clamp(12rem, 18vw, 24rem); /* Using clamp for responsive gap */
 }
+
+
+
+
 
     .hover-glitch{
 &:hover{
