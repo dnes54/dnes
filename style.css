@@ -1,59 +1,63 @@
- /* Importing Custom Font */
- @font-face {
-    font-family: "SF pro"; /* Specify the font name */
-    src: url(".font/SF-Pro.ttf") format("ttf");
-    font-weight: normal;
-    font-style: normal;
-  }
-  html {
-    font-size: 62.5%;
-  }
-  :root {
-    --primary-bg: #1f222c;
-    --primary-font: #b9ff66;
-  }
-  /* Internal Styles */
-  body {
-    font-family: "SF pro", sans-serif; /* Using the custom font */
-    background-color: var(--primary-bg);
-    color: var(--primary-font);
-    margin: 0;
-    overflow: hidden;
-  }
-  p {
-    margin: 0;
-  }
-  main {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-    overflow: hidden;
-    padding: 0 8rem;
-    gap: 25%;
-  }
+/* Importing Custom Font */
+@font-face {
+  font-family: "SF pro"; /* Specify the font name */
+  src: url("./SF-Pro.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-size: 62.5%;
+}
+:root {
+  --primary-bg: #1f222c;
+  --primary-font: #b9ff66;
+}
+/* Internal Styles */
+body {
+  font-family: "SF pro", sans-serif; /* Using the custom font */
+  background-color: var(--primary-bg);
+  color: var(--primary-font);
+  margin: 0;
+  overflow: hidden;
+}
+p {
+  margin: 0;
+}
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0 6%;
+  gap: 25%;
+}
 
-  .title {
-    margin: 0;
-    font-size: 19.8rem;
-    line-height: 15.8rem;
-  }
-  .block {
-    display: block;
-  }
-  .mb-8 {
-    margin-bottom: 0.8rem;
-  }
-  footer {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.4rem;
-    line-height: 1.5rem;
-  }
-  .left-section {
-    display: flex;
-    gap: 24rem;
-  }
+.title {
+  margin: 0;
+  font-size: clamp(5rem, 15vw, 19.8rem);
+  line-height: clamp(4rem, 12vw, 15.8rem);
+}
+
+.block {
+  display: block;
+}
+
+.mb-8 {
+  margin-bottom: 0.8rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: clamp(1rem, 1vw, 1.4rem);
+  line-height: clamp(1rem, 1.2vw, 1.5rem);
+}
+
+.left-section {
+  display: flex;
+  gap: clamp(12rem, 18vw, 24rem); /* Using clamp for responsive gap */
+}
 
     .hover-glitch{
 &:hover{
